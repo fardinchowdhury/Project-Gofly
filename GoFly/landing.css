@@ -1,0 +1,327 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(238, 240, 241);
+}
+.logo a:hover{
+    color: black;
+}
+.logo{
+    color: white;
+    font-family: 'Plaster', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width:30%;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.wel h1{
+    text-align: center;
+    margin: 5%;
+    color: azure;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-around;
+    letter-spacing: 3px;
+}
+.nav-links a{
+    color: rgb(238, 240, 241);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav-links a:hover{
+    color: black;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(238, 240, 241);
+    margin: 5px;
+
+}
+ @media screen and (max-width: 1200px) {
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(130, 111, 236);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 1;
+    }
+    .burger{
+        display: block;
+    }
+
+}
+
+.nav-active{
+    transform: translate(0%);
+}
+
+/* hoverr underline */
+
+
+
+/* dropdown for nav */
+.dropdown a{
+    text-transform: capitalize;
+}
+.dropdown-content {
+    background-color: rgb(77, 5, 136);
+    display: none;
+    position: absolute;
+    width: 10rem;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #650abb8c;
+}
+/* sucess message */
+.sucess {
+    color: rgb(45, 170, 20);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1%;
+}
+
+/* Failed Message */
+.failed{
+    color: rgb(212, 5, 5);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1%;
+}
+
+/* _______________________________________________ Search Functionality ______________________________________ */
+
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    box-shadow: 15px 15px 20px black;
+    background-color: whitesmoke;
+}
+
+.header {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(124, 100, 231);
+}
+
+.flight {
+    padding: 20px;
+}
+
+.flight input, select {
+    color: #6d70df;
+}
+
+.info-box {
+    padding: 0px 0;
+    margin-top: 20px;
+    flex: 1;
+    border-right: 20px solid transparent;
+}
+
+.info-box:last-child {
+    border-right: none;
+}
+
+.info-box label {
+    display: block;
+    color: #6B6A6A;
+    font-size: .9em;
+}
+
+.info-box input[type=text], input[type=submit], select {
+    padding: 12px;
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid rgb(124, 100, 231);
+    outline: none;
+    border-radius: 5px;
+}
+
+#flight-type input[type="radio"] {
+    margin-right: 5%;
+}
+
+#flight-type {
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px dotted silver;
+}
+
+#flight-type .info-box {
+    flex: 0 1 25%;
+    display:flex;
+    align-items: center;
+}
+
+#flight-depart {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted silver;
+}
+
+#flight-depart .info-box {
+    position: relative;
+}
+
+#depart-res, #arrive-res {
+    position: absolute;
+    background: #FFFFFF;
+}
+
+#depart-res p, #arrive-res p {
+    padding: 7px 2px;
+    border-bottom: 1px dotted silver;
+}
+
+#depart-res p:hover, #arrive-res p:hover {
+    background: #EDEDED;
+    cursor: pointer;
+}
+
+#flight-dates {
+    display: flex;
+    border-bottom: 1px dotted silver;
+}
+
+#flight-info {
+    display: flex;
+    width: 200px;
+}
+
+#flight-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#flight-search .info-box {
+    display: flex;
+    justify-content: center;
+}
+
+#flight-search input[type=submit] {
+    background: #9f5dee;
+    color: white;
+    padding: 0;
+    height: 50px;
+    font-size: 1.4em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    width: 60%;
+}
+
+#flight-search input[type=submit]:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.date-box {
+    padding: 12px;
+    width: 100%;
+    margin: 15px;
+    border: 1px solid rgb(124, 100, 231);
+    outline: none;
+    border-radius: 5px;
+
+}
+.footer {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #6d70df;
+    width: 100%;
+    color: white;
+ }
+.social-icons
+ {
+   text-align:right
+ }
+.social-icons a
+ {
+   width:40px;
+   height:40px;
+   line-height:40px;
+   margin-left:6px;
+   margin-right:0;
+   border-radius:100%;
+   background-color:pink
+ }

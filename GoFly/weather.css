@@ -1,0 +1,93 @@
+.btn-weather {                      /* - weather button on the ticket in lisitng */
+    display: block;
+    text-align: center;
+    padding: 3px 10px;
+    margin-top: 62px;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: rgb(124, 100, 231);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    width: fit-content;
+    }
+
+    .btn-weather:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+    }  
+
+#weather-submit {
+    display: block;
+    width: fit-content;
+    height: 35px;
+    background-color: rgb(124, 100, 231);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#weather-submit:hover {
+    background-color: blueviolet;
+}
+
+.weather-box {                                  /* - search box */
+    padding: 12px;
+    width: 55%;
+    border: 1px solid rgb(124, 100, 231);
+    outline: none;
+    border-radius: 5px;
+    color: rgb(124, 100, 231);;
+}
+
+.form h2.weather-title {                        /* - title of the weather search box */
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: rgb(124, 100, 231);
+}
+
+/* Style for the weather-container div */
+#weather-container {                            /* - weather container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(191, 184, 219);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(224, 10, 10, 0.1);
+}
+
+#weather-container h2 {                         /* - title of the weather container */
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+#weather-container img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#weather-container p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .weather-box {
+        width: 100%;
+    }
+}

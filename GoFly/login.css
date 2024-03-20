@@ -1,0 +1,220 @@
+html { 
+    background: url("photos/bgimg.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.container {
+    display: flex;
+    height: 500px;
+    width: 800px;
+    object-fit: cover; 
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 15px 15px 20px black;
+}
+.container-2 {
+    display: flex;
+    height: 850px;
+    width: 1000px;
+
+    object-fit: cover; 
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    box-shadow: 15px 15px 20px black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.form-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.form-3 h2 {
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px;
+    color: rgb(124, 100, 231);
+}
+
+.form h2 {
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px;
+    color: rgb(124, 100, 231);
+}
+
+.box{
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid rgb(124, 100, 231);
+    outline: none;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 12px 30px;
+    width: 60%;
+    margin-top: 30px;
+    background-color: rgb(124, 100, 231);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+
+}
+
+#p-login {
+    margin-top: 30px;
+}
+.form a {
+    text-decoration: none;
+    color: black;
+}
+
+.form a:hover{
+    color: #5f49db;
+}
+
+
+.side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+}
+
+.side img{
+    width: fit-content;
+    height: 498px;
+}
+.side-2 img{
+    margin: 0;
+    width:500px;
+    height: 850px;
+}
+.flex-1 {
+    flex: 1;
+
+}
+
+
+.btn-1 {
+    display: block;
+    text-align: center;
+    padding: 12px 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: rgb(124, 100, 231);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn-1:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#color-g input[type=number] {
+  appearance: textfield;
+}
+
+.color-g input:valid,
+textarea:valid {
+    border-color: rgb(103, 204, 103);
+}
+.color-g input[type=text]:focus,
+.color-g input[type=email]:focus,
+.color-g input[type=password]:focus,
+.color-g input[type=number]:focus
+ {
+    border-color: #ce1515;
+  }
+
+
+/* _________________________________Review Page __________________________ */
+.reviews-btn-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    text-align: center;
+}
+
+.view-reviews-btn {
+    padding: 12px 30px;
+    width: 30%;
+    margin-top: 30px;
+    background-color: rgb(124, 100, 231);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.view-reviews-btn:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+
+/* responsive review list directing button for mobile */
+@media screen and (max-width: 767px) {         
+    .view-reviews-btn {
+        width: 30%;
+        height: auto;
+    }
+}
+
+/* responsive review list directing button for mobile */
+@media screen and (max-width: 480px) {              
+    .view-reviews-btn {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .reviews-btn-container {
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .reviews-btn-container {
+        bottom:1050px;
+    }
+}
