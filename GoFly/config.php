@@ -12,7 +12,7 @@ $username = "root";
 $password = "";
 $dbname = "go_fly";
 
-define('SENDGRID_API_KEY', "SG.Go3WsEFDQt-YiWo81L9mcQ.LQRRZ9SztycbtHrQXz2m1SLlaEU1-Gaoz4IU1SW3ozQ");
+// define('SENDGRID_API_KEY', "SG.Go3WsEFDQt-YiWo81L9mcQ.LQRRZ9SztycbtHrQXz2m1SLlaEU1-Gaoz4IU1SW3ozQ");
 
 
 
